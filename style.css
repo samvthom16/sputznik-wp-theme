@@ -197,3 +197,19 @@ footer .sow-features-feature{
 #page-content-wrapper .breadcrumb{
 	background-color: none;
 }
+
+.tax-term {
+	display: inline-block;
+    font-family: Roboto;
+    font-size: inherit;
+    padding: 7px 25px;
+    background: transparent;
+    border: 2px solid #f75a00;
+    color: #f75a00 !important;
+    border-radius: 1.5em;
+    margin: 50px 25px 0px 0px;
+}
+
+.tax-term i.fa.fa-tag {
+    margin-right: 8px;
+}

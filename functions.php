@@ -53,3 +53,24 @@
 		) );
 		
 	});
+
+	add_shortcode('sp_taxonomy_terms', function( $atts ){
+		global $post;
+
+		ob_start();
+
+		$args = shortcode_atts( array(
+				'taxonomy' => 'category'
+			), $atts );
+		
+		$tax_terms = wp_get_object_terms( $post->ID, $args['taxonomy'] );
+		
+		if( count($tax_terms) ) { 
+			foreach ($tax_terms as $tax_term) {
+				$term_link = get_term_link( $tax_term );
+				echo '<div class="tax-term"><i class="fa fa-tag"></i><a href="'.$term_link.'">'. $tax_term->name. '</a> </div>';
+			}
+		}
+			
+		return ob_get_clean();
+	});
