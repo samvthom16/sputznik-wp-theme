@@ -1,0 +1,199 @@
+/*
+Theme Name: Sputznik
+Template: sputznik-core-wp-theme 
+Theme URI: http://sputznik.com
+Description: Responsive one page WP theme for Sputznik.
+Version: 6.15
+Author: Meenu Maria (Sputznik)
+Author URI: http://sputznik.com
+*/
+a{
+	color: #666;
+}
+/* CSS Document */
+body, .rocket{
+	background:repeating-linear-gradient(    45deg,     #f2f2f2 ,   #f2f2f2 ,#e8e8e8 ,   #e8e8e8 6px);
+	transition: 0.3s all ease-in-out;
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    color: #555;
+    line-height: 30px;
+    font-weight: 300;
+    text-align: justify;
+	overflow-x: hidden;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Patua One', cursive;
+	text-align: center;
+	font-weight: bold;
+}
+.top-buffer{ margin-top: 2em !important;}
+.bottom-buffer { margin-bottom: 2em !important; }
+
+.list-inline>li{
+	display: inline-block;
+	padding: 5px;
+}
+.list-unstyled li{
+	list-style: none;
+}
+.text-center{
+	text-align: center;
+}
+.rocket{
+	border: 1px solid #c1bfbf;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 20px;
+}
+.hdr-logo{
+	margin: 40px auto 100px;
+}
+.hdr-rocket{
+	margin: -80px auto 20px;
+}
+.header1 .logo{
+	margin-bottom: 5em;
+}
+hr {
+    border-bottom: 1px dashed #a7a7a7;
+}
+footer{
+	background: #222;
+	color: #666;
+	padding: 10px;
+}
+footer .sow-features-feature{
+	width: auto !important;
+	padding: 1em !important;
+}
+.no-line-ht{
+	line-height: 0;
+}
+.toggle-button {
+  position: fixed;
+  width: 44px;
+  height: 40px;
+  padding: 4px;
+  transition: 0.3s all ease-in-out;
+  z-index: 15;
+	margin: 1em;	
+}
+.toggle-button:hover {
+  cursor: pointer;
+}
+.toggle-button.button-open{
+	margin-left:230px;
+	transition: 0.3s all ease-in-out;;
+}
+.toggle-button .menu-bar {
+    transition: 0.3s all ease-in-out;
+    margin: 5px;
+    border: 2px solid #555;
+}
+.button-open .menu-bar-top {
+  transform: rotate(45deg) translate(8px, 8px);
+  transition: 0.3s all ease-in-out;
+}
+.button-open .menu-bar-middle {
+  transform: translate(230px);
+  transition: .3s all ease-in-out;
+  opacity: 0;
+}
+.button-open .menu-bar-bottom {
+  transform: rotate(-45deg) translate(4px, -6px);
+  transition: 0.3s all ease-in-out;
+}
+.menu-wrap {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+    transition: 0.3s all ease-in-out;
+    z-index: 10;
+	color: #fff;
+}
+.menu{
+	padding: 1em 0;
+	margin: 0;
+}
+.menu-show {
+	width: 100%;
+}
+.menu-sidebar{
+	width: 0;
+    height: 100%;
+    background: rgba(14, 14, 14, 0.96);
+	transition: 0.3s all ease-in-out;
+}
+.menu-show .menu-sidebar{
+    width: 220px;
+}
+.wrapper{
+	transition: 0.3s all ease-in-out;
+    overflow: hidden;
+}
+.wrapper.open{
+	margin-left: 220px
+}
+.wrapper.open:before {
+    content: '';
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    position: fixed;
+    height: 100%;
+}
+.menu li a{
+	display: block;
+	color: #ddd;
+	text-decoration: none;
+	padding: 10px 15px 10px 30px;
+	position: relative;
+}
+.menu li{
+	position: relative;
+	transition: 0.3s width ease-in-out;
+}
+.menu li:before{
+	content: '';
+	position: absolute;
+	height: 100%;
+    width: 3px;
+	top: 0;
+    left: 0;
+    background: #ec1b5a;
+	transition: 0.3s width ease-in-out;
+}
+.menu li:hover::before{
+	width: 100%;
+}
+.menu li a:hover{
+	color: #fff;
+}
+.textwidget img.photo{
+	margin-right: 1em;
+	height: 150px;
+	width: 150px;
+}
+.widget_text .widget-title{
+	margin-bottom: 1em;
+}
+.textwidget a{
+	font-weight: 400;
+}
+.card-img{
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 300px;
+	display: block;
+}
+#post-carousel .sow-slider-base .sow-slider-pagination{
+	text-align: center;
+}
+#page-content-wrapper .breadcrumb{
+	background-color: none;
+}
