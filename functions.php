@@ -12,12 +12,24 @@
 		if(!is_home()){
 			echo '<nav class="breadcrumb">';
 			echo '<a href="'.home_url('/').'">'.get_bloginfo('name').'</a><span class="divider"> / </span>';
-			if(is_category() || is_single()){
-				the_category('<span class="divider"> / </span>');
-				if(is_single()){
-					echo '<span class="divider"> / </span>';
-					the_title();
-				}
+				
+			if(is_single()){
+				$post_type = get_post_type();
+	              
+	            // If it is a custom post type display name and link
+	            if($post_type != 'post') {
+	                  
+	                $post_type_object = get_post_type_object($post_type);
+	                $post_type_archive = get_post_type_archive_link($post_type);
+	              
+	                echo '<a href="' . $post_type_archive . '" >' . $post_type_object->labels->name . '</a>';
+	              
+	                echo '<span class="divider"> / </span>';
+
+	            }
+
+	            echo the_title();
+					
 			}
 			elseif(is_page()){
 				echo the_title();
