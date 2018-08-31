@@ -205,6 +205,7 @@ footer .sow-features-feature{
 	background-color: none;
 }
 
+
 /* FOR CLASSES WITHIN SITEORIGIN */
 .fixed-col{
 	max-width: 1200px;
@@ -214,6 +215,23 @@ footer .sow-features-feature{
 }
 
 h5{ font-size: 22px; line-height: 1.4;}
-
 h4{ font-size: 24px;}
 h1{ font-size: 38px; }
+
+/* TAG SHORTCODE */
+.tax-term {
+	display: inline-block;
+    font-family: Roboto;
+    font-size: inherit;
+    padding: 7px 25px;
+    background: transparent;
+    border: 2px solid #f75a00;
+    color: #f75a00 !important;
+    border-radius: 1.5em;
+    margin: 50px 25px 0px 0px;
+}
+
+.tax-term i.fa.fa-tag {
+    margin-right: 8px;
+}
+
