@@ -3,7 +3,7 @@
 	add_theme_support( 'post-thumbnails' );
 
 	add_action('wp_enqueue_scripts', function(){
-		wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() .'/style.css', array( 'sp-core-style' ), '1.0.1' );
+		wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() .'/style.css', array( 'sp-core-style' ), '1.0.3' );
 	});
 
 	
@@ -27,13 +27,15 @@
 		
 	}
 
-
-	add_action('sp_logo', function(){
-		
+	
+	add_action('sp_header1_after', function(){
+		echo '<div class="container"><div class="row"><div class="col-md-12">';
 		echo '<hr><h1 class="text-center hdr-rocket"><span class="rocket"><img src="'.get_stylesheet_directory_uri().'/images/s-rocket.png"></span>
 		</h1>';
+		echo '</div></div></div>';
 		
 	}, 10 );
+	
 	
 	add_action( 'sp_pre_footer', function(){
 		
