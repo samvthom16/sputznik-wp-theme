@@ -40,11 +40,11 @@
 	}
 
 	
-	add_action('sp_header1_after', function(){
-		echo '<div class="container"><div class="row"><div class="col-md-12">';
+	add_action('sp_logo', function(){
+		
 		echo '<hr><h1 class="text-center hdr-rocket"><span class="rocket"><img src="'.get_stylesheet_directory_uri().'/images/s-rocket.png"></span>
 		</h1>';
-		echo '</div></div></div>';
+		
 		
 	}, 10 );
 	
