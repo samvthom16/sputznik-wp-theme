@@ -27,11 +27,11 @@ body, .rocket{
 	background:repeating-linear-gradient(    45deg,     #f2f2f2 ,   #f2f2f2 ,#e8e8e8 ,   #e8e8e8 6px);
 }
 
-/*
-.affix-top, .affix{
-	background:repeating-linear-gradient(    45deg,     #f2f2f2 ,   #f2f2f2 ,#e8e8e8 ,   #e8e8e8 6px);
+
+.header1 .affix-top,.header1 .affix{
+	background:repeating-linear-gradient(    30deg,     #f2f2f2 ,   #f2f2f2 ,#e8e8e8 ,   #e8e8e8 6px);
 }
-*/
+
 
 h1, h2, h3, h4, h5 {
     font-family: 'Patua One', cursive;
