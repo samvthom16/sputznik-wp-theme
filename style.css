@@ -2,15 +2,14 @@
 Theme Name: Sputznik
 Template: sputznik-core-wp-theme 
 Theme URI: http://sputznik.com
-Description: Responsive one page WP theme for Sputznik.
-Version: 6.15
-Author: Meenu Maria (Sputznik)
+Description: Responsive theme for Sputznik.
+Version: 2.0.0
+Author: Samuel (Sputznik)
 Author URI: http://sputznik.com
 */
-a{
-	color: #666;
-}
-/* CSS Document */
+
+a{ color: #666; }
+
 body, .rocket{
 	background:repeating-linear-gradient(    45deg,     #f2f2f2 ,   #f2f2f2 ,#e8e8e8 ,   #e8e8e8 6px);
 	transition: 0.3s all ease-in-out;
@@ -23,20 +22,24 @@ body, .rocket{
     text-align: justify;
 	overflow-x: hidden;
 }
+
 .header1 .hamburger{
 	background:repeating-linear-gradient(    45deg,     #f2f2f2 ,   #f2f2f2 ,#e8e8e8 ,   #e8e8e8 6px);
 }
 
+.breadcrumb{
+	border: #f47200 dashed 1px;
+	background: none;
+}
 
 .header1 .affix-top,.header1 .affix{
-	background:repeating-linear-gradient(    30deg,     #f2f2f2 ,   #f2f2f2 ,#e8e8e8 ,   #e8e8e8 6px);
+	background:repeating-linear-gradient(    45deg,     #f2f2f2 ,   #f2f2f2 ,#e8e8e8 ,   #e8e8e8 6px);
+	
+}
+.header1 .affix{
+	box-shadow: rgba(85, 85, 85, 0.5) 0 1px 4px 0;
 }
 
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Patua One', cursive;
-	font-weight: bold;
-}
 .top-buffer{ margin-top: 2em !important;}
 .bottom-buffer { margin-bottom: 2em !important; }
 
@@ -70,15 +73,9 @@ h1, h2, h3, h4, h5 {
 hr {
     border-bottom: 1px dashed #a7a7a7;
 }
-footer{
-	background: #222;
-	color: #666;
-	padding: 10px;
-}
-footer .sow-features-feature{
-	width: auto !important;
-	padding: 1em !important;
-}
+
+
+
 .no-line-ht{
 	line-height: 0;
 }
@@ -218,15 +215,19 @@ footer .sow-features-feature{
 	padding: 50px 20px;
 }
 
+h1, h2, h3, h4, h5 {
+    font-family: 'Patua One', cursive;
+	font-weight: bold;
+}
 h5{ font-size: 22px; line-height: 1.4;}
 h4{ font-size: 24px;}
+h3{ font-size: 20px; line-height: 1.6;}
 h1{ font-size: 38px; line-height: 1.4;}
 
 
 /* TAG SHORTCODE */
 .tax-term {
 	display: inline-block;
-    font-family: Roboto;
     font-size: inherit;
     padding: 7px 25px;
     background: transparent;
@@ -249,17 +250,55 @@ h1{ font-size: 38px; line-height: 1.4;}
 	line-height: 1.4;
 	margin-bottom: 30px;
 	color: #878787;
+	text-align: left;
 }
 
-a[href].orbit-btn{
+.post-nav{
+	margin-top: 30px;
+}
+
+.post-nav a[href], a[href].orbit-btn{
 	border: #fd661d solid 2px;
 	border-radius: 50px;
 	padding: 10px 20px;
 	color: #fd661d;
 }
 
-a[href].orbit-btn:hover{
+.post-nav a[href]:hover, a[href].orbit-btn:hover{
 	background: #fd661d;
 	color: #fff;
+	text-decoration: none;
+}
+
+
+.post-nav a[href]{
+	border: #555 solid 2px;
+	color: #555;
+}
+.post-nav a[href]:hover{
+	background: #555;
 }
 /* ORBIT STYLES */
+
+footer{
+	background: #222;
+	color: #666;
+	padding: 10px;
+}
+
+footer .sow-features-feature{
+	width: auto !important;
+	padding: 1em !important;
+}
+
+#footer-sidebar1 h3, #footer-sidebar4 h3{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+@media( min-width: 787px ){
+	#footer-sidebar4 h3{
+		text-align: right;
+	}
+}
+

@@ -3,7 +3,7 @@
 	add_theme_support( 'post-thumbnails' );
 
 	add_action('wp_enqueue_scripts', function(){
-		wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() .'/style.css', array( 'sp-core-style' ), '1.0.6' );
+		wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() .'/style.css', array( 'sp-core-style' ), '1.0.7' );
 	});
 
 	
