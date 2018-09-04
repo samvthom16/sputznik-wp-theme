@@ -3,7 +3,7 @@
 	add_theme_support( 'post-thumbnails' );
 
 	add_action('wp_enqueue_scripts', function(){
-		wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() .'/style.css', array( 'sp-core-style' ), '1.0.5' );
+		wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() .'/style.css', array( 'sp-core-style' ), '1.0.6' );
 	});
 
 	
@@ -41,9 +41,10 @@
 
 	
 	add_action('sp_logo', function(){
-		
+		echo '<div class="fixed-col">';
 		echo '<hr><h1 class="text-center hdr-rocket"><span class="rocket"><img src="'.get_stylesheet_directory_uri().'/images/s-rocket.png"></span>
 		</h1>';
+		echo '</div>';
 		
 		
 	}, 10 );

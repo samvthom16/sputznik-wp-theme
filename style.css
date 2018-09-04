@@ -35,7 +35,6 @@ body, .rocket{
 
 h1, h2, h3, h4, h5 {
     font-family: 'Patua One', cursive;
-	text-align: center;
 	font-weight: bold;
 }
 .top-buffer{ margin-top: 2em !important;}
