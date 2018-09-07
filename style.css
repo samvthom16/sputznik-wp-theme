@@ -291,6 +291,10 @@ footer .sow-features-feature{
 	padding: 1em !important;
 }
 
+footer .container-fluid{
+	max-width: 1200px;
+}
+
 #footer-sidebar1 h3, #footer-sidebar4 h3{
 	margin-top: 0;
 	margin-bottom: 0;
