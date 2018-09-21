@@ -3,7 +3,7 @@
 	add_theme_support( 'post-thumbnails' );
 
 	add_action('wp_enqueue_scripts', function(){
-		wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() .'/style.css', array( 'sp-core-style' ), '1.0.8' );
+		wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() .'/style.css', array( 'sp-core-style' ), '1.0.9' );
 	});
 
 	
@@ -11,7 +11,7 @@
 	function sp_breadcrumb(){
 		if(!is_home()){
 			echo '<nav class="breadcrumb">';
-			echo '<a href="'.home_url('/').'">'.get_bloginfo('name').'</a><span class="divider"> / </span>';
+			echo '<a href="'.home_url('/').'">Home</a><span class="divider"> / </span>';
 				
 			if(is_single()){
 				$post_type = get_post_type();
